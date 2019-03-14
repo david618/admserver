@@ -34,7 +34,7 @@ target/
 # eclipse project file
 .settings/
 .classpath
-.project
+#.project
 
 # NetBeans specific
 nbproject/private/
