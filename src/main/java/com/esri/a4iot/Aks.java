@@ -24,7 +24,11 @@ public class Aks extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
+	    /*
+	     *  return information about an existing aks
+	     *  For no inputs returns a list of AKS's currently under management
+	     *  For specified tenantID return detailed info about that AKS (vmsize, count, ...)
+	     */
 		response.getWriter().append("Served at: ").append(request.getContextPath());
 	}
 
@@ -32,7 +36,11 @@ public class Aks extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
+		/*
+		 *  Create Tenant aks
+		 *  Requires tenantID
+		 */
+		
 		doGet(request, response);
 	}
 
@@ -40,14 +48,21 @@ public class Aks extends HttpServlet {
 	 * @see HttpServlet#doPut(HttpServletRequest, HttpServletResponse)
 	 */
 	protected void doPut(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
+		/*
+		 * Update an AKS 
+		 * Change count
+		 * Upgrade k8s version
+		 */
 	}
 
 	/**
 	 * @see HttpServlet#doDelete(HttpServletRequest, HttpServletResponse)
 	 */
 	protected void doDelete(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
+		/*
+		 * Delete a specified AKS
+		 * For delete return a verification code and require a second Delete call with that code in the header
+		 */
 	}
 
 }

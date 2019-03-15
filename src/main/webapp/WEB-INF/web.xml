@@ -10,8 +10,18 @@
   	<description></description>
   	<servlet-class>com.esri.a4iot.Aks</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>Tenant</servlet-name>
+  	<display-name>Tenant</display-name>
+  	<description></description>
+  	<servlet-class>com.esri.a4iot.Tenant</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>Aks</servlet-name>
   	<url-pattern>/aks</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Tenant</servlet-name>
+  	<url-pattern>/tenant</url-pattern>
   </servlet-mapping>
 </web-app>
